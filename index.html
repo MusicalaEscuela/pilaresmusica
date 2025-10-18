@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pilares de la Música | Musicala</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <img src="logo.png" alt="Logo Musicala" class="logo" />
+      <div>
+        <h1>Los 3 Pilares de la Música</h1>
+        <p class="tagline">Ritmo • Melodía • Armonía — explicado fácil y visual</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero principal -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>La música se construye con tres pilares esenciales</h2>
+        <p>Así como un cuerpo tiene <strong>esqueleto, músculos y piel</strong>, la música tiene <strong>ritmo, melodía y armonía</strong>.  
+        También como un cuadro: <em>lienzo, boceto y colores</em> que juntos forman una obra completa.</p>
+        <div class="quick-actions">
+          <button class="btn pill" data-target="#ritmo">Ver Ritmo</button>
+          <button class="btn pill" data-target="#melodia">Ver Melodía</button>
+          <button class="btn pill" data-target="#armonia">Ver Armonía</button>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="Pilares.png" alt="Ilustración de los pilares de la música" class="hero-img">
+      </div>
+    </section>
+
+    <!-- Analogías visuales -->
+    <section class="cards-2col">
+      <article class="card">
+        <h3>Analogía: Cuerpo Humano</h3>
+        <img src="cuerpo.png" alt="Analogía del cuerpo humano: ritmo, melodía y armonía" class="card-img">
+        <p class="small"><strong>Ritmo</strong> es el esqueleto que sostiene.  
+        <strong>Melodía</strong> son los músculos que dan movimiento.  
+        <strong>Armonía</strong> es la piel que unifica todo.</p>
+      </article>
+
+      <article class="card">
+        <h3>Analogía: Pintura</h3>
+        <img src="cuadro.png" alt="Analogía del cuadro: lienzo, boceto y colores" class="card-img">
+        <p class="small">El <strong>ritmo</strong> es el lienzo que da estructura,  
+        la <strong>melodía</strong> es el boceto que marca la línea principal,  
+        y la <strong>armonía</strong> son los colores que completan la obra.</p>
+      </article>
+    </section>
+
+    <!-- Ritmo -->
+    <section id="ritmo" class="pillar">
+      <div class="pillar-head">
+        <span class="chip chip-ritmo">Ritmo</span>
+        <h2>El Ritmo</h2>
+      </div>
+      <img src="Ritmo.jpg" alt="Representación del ritmo musical" class="pillar-img">
+      <p>El <strong>ritmo</strong> es la base de la música, la organización del pulso y los acentos en el tiempo.  
+      Es lo que nos hace marcar el compás con el pie o mover la cabeza al escuchar una canción.</p>
+      <div class="example">
+        <div class="example-controls">
+          <button class="btn" id="playBeat">▶ Escuchar Ritmo</button>
+          <button class="btn ghost" id="stopAll">■ Detener</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Melodía -->
+    <section id="melodia" class="pillar">
+      <div class="pillar-head">
+        <span class="chip chip-melodia">Melodía</span>
+        <h2>La Melodía</h2>
+      </div>
+      <img src="Melodía.jpg" alt="Representación de la melodía musical" class="pillar-img">
+      <p>La <strong>melodía</strong> es la sucesión de notas que reconocemos y tarareamos.  
+      Es la voz de la música, la línea que cuenta una historia a través de los sonidos.</p>
+      <div class="example">
+        <div class="example-controls">
+          <button class="btn" id="playMelody">▶ Escuchar Melodía</button>
+          <button class="btn ghost" id="stopAll2">■ Detener</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Armonía -->
+    <section id="armonia" class="pillar">
+      <div class="pillar-head">
+        <span class="chip chip-armonia">Armonía</span>
+        <h2>La Armonía</h2>
+      </div>
+      <img src="Armonía.jpg" alt="Representación de la armonía musical" class="pillar-img">
+      <p>La <strong>armonía</strong> son los sonidos simultáneos que acompañan la melodía.  
+      Es el color de la música, la combinación que da profundidad y emoción.</p>
+      <div class="example">
+        <div class="example-controls">
+          <button class="btn" id="playChords">▶ Escuchar Armonía</button>
+          <button class="btn ghost" id="stopAll3">■ Detener</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Escuela de artes <strong>Musicala</strong>.</p>
+      <p class="small">Hecho con amor y ritmo en Bogotá.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
